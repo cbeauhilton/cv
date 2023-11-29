@@ -1,26 +1,12 @@
 # Publications
 
-<!-- ## Selected Publications
-
-\begingroup
-\setlength{\parindent}{-0.5in}
-\setlength{\leftskip}{0.5in}
-
-::: {#refs_selected}
-:::
-\endgroup -->
-
-## Refereed Journal Papers
-
 ::: {#refs_journals}
 :::
 
-## Working Papers under Revision or Review
+<!-- ## Working Papers under Revision or Review -->
+<!--  -->
+<!-- ::: {#refs_working_paper} -->
+<!-- ::: -->
 
-::: {#refs_working_paper}
-:::
-
-## Papers in Refereed Conference Proceedings
-
-::: {#refs_proceedings}
-:::
+<!--  ::: {#refs_proceedings} -->
+<!-- ::: -->

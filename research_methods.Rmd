@@ -1,8 +1,8 @@
 # Primary Research Methods
 
  * Data Science-Based Reproducible Research
+ * Database Creation and Preservation
  * Learning Analytics/Statistical Computing
- * Large-Scale-Longitudinal Quantitative/Virtual Ethnography
+ * Interpetable Machine Learning
  * Supervised/Unsupervised Machine Learning-Based Text Mining 
- * Computational Linguistics/NLP
-
+ * Computational Linguistics/Natural Language Processing

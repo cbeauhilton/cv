@@ -1,0 +1,7 @@
+what,when,with,where,why
+shiny: Web Application Framework for R,2020,"Chang, W., Cheng, J., Allaire, J., Xie, Y., & McPherson, J.",https://cran.r-project.org/web/packages/shiny/,Contributed to improving keyboard and TTS accessibility for input widgets.
+vitae: Curriculum Vitae for R Markdown,2020,"O'Hara-Wild, M., & Hyndman, R.",https://cran.r-project.org/web/packages/vitae/,Contributed to enabling LaTeX engine customization.
+,,,,Contributed to displaying multiple bibliographies based on lua filter.
+rmarkdown: Dynamic Documents for R,2019,"Allaire, J., Xie, Y., et al.",https://cran.r-project.org/web/packages/rmarkdown/,Contributed to improving ioslides_presentation accessibility for screen reading software.
+bookdown: Authoring Books and Technical Documents with R Markdown,2019,"Xie, Y.",https://cran.r-project.org/web/packages/bookdown/,"Developed context_document2, github_document2, beamer_presentation2, html_fragment2, html_notebook2, html_vignette2, ioslides_presentation2, slidy_presentation2 and rtf_document2 functions to enable R markdown users to utilize cross-references for figures and tables through bookdown package."
+distill: 'R Markdown' Format for Scientific and Technical Writing,2019,"Allaire, J., Iannone, R., & Xie, Y.",https://cran.r-project.org/web/packages/distill/,Contributed to displaying more metadata for journal article bib_entries.

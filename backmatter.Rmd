@@ -1,5 +1,5 @@
 # Notes
 
-* This CV is reproducible; all the source code behind this CV is available on [this GitHub repo](https://github.com/jooyoungseo/jy_CV){target="_blank"}.
-
-![JooYoung Seo's Signature](data/signature.png)\
+* This CV is reproducible:
+  source code available on this GitHub repository: <https://github.com/cbeauhilton/cv>, 
+  which borrowed heavily from JooYoung Seo's CV project: <https://github.com/jooyoungseo/jy_CV>.

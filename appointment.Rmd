@@ -1,0 +1,7 @@
+# Professional Appointments
+
+```{r appointment}
+ezpickr::pick("data/appointment.csv") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+```

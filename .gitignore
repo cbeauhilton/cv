@@ -1,0 +1,13 @@
+*.cls
+*.bat
+*.log
+*.pdf
+*.tex
+*.Rproj
+.Rproj
+.Rproj.user
+.RData
+fonts/*
+resources/
+short_cv/*
+_output/*

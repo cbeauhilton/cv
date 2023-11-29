@@ -1,0 +1,178 @@
+---
+graphics: yes
+name: Beau
+surname: Hilton
+headcolor: 414141
+#qualifications:
+position: "Physician data-scientist"
+address: "303 Light Hall, 2215 Garland Ave. Nashville, TN 37232"
+phone: "+1 623-332-7978"
+www: beauhilton.com
+email: "beau@beauhilton.com"
+github: cbeauhilton
+# aboutme: Physician, data scientist.
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+csl: "csl/apa6-cv.csl"
+nocite: "@*"
+knit: "bookdown::render_book"
+output:
+  vitae::awesomecv:
+    fig_caption: yes
+    keep_tex: no
+    keep_md: no
+    pandoc_args:
+      #- --lua-filter="lua/multiple-bibliographies.lua"
+      - --lua-filter="lua/strong.lua"
+bibliography_journals: "bib/journal.bib"
+bibliography_abstracts: "bib/poster_abstract.bib"
+bibliography_oral_abstracts: "bib/oral_abstract.bib"
+# bibliography_contribute: "bib/contribute.bib"
+# bibliography_selected: "bib/selected.bib"
+# bibliography_wip_journal: "bib/wip_journal.bib"
+# bibliography_wip_proceeding: "bib/wip_proceeding.bib"
+header-includes:
+  - \usepackage{fancyhdr}
+  - \pagestyle{fancy}
+  - \fancyhf{}
+  - \fancyhead[R]{\thepage}
+---
+
+```{r setup, include=FALSE, cache = FALSE}
+library(knitr)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+library(ezpickr)
+```
+
+<!--chapter:end:index.Rmd-->
+
+# Education
+
+```{r education}
+ezpickr::pick("data/education.csv") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:education.Rmd-->
+
+# Work Experience
+
+```{r working-experience}
+ezpickr::pick("data/working-experience.csv") %>%
+  dplyr::filter(highlight == 1) %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why, .protect = FALSE)
+```
+
+<!--chapter:end:work_exp.Rmd-->
+
+# Professional Appointments
+
+```{r appointment}
+ezpickr::pick("data/appointment.csv") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:appointment.Rmd-->
+
+# Publications
+
+::: {#refs_journals}
+:::
+
+<!-- ## Working Papers under Revision or Review -->
+<!--  -->
+<!-- ::: {#refs_working_paper} -->
+<!-- ::: -->
+
+<!--  ::: {#refs_proceedings} -->
+<!-- ::: -->
+
+<!--chapter:end:publication.Rmd-->
+
+# Presentations
+
+```{r talk}
+ezpickr::pick("data/talk.csv") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why, .protect = TRUE)
+```
+
+<!--chapter:end:presentation.Rmd-->
+
+# Abstracts
+
+::: {#refs_abstracts}
+:::
+
+<!--chapter:end:abstract.Rmd-->
+
+# Research Experience
+
+```{r research-experience}
+ezpickr::pick("data/research-experience.csv") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:research_exp.Rmd-->
+
+# Grants
+
+```{r grant}
+ezpickr::pick("data/grant.csv") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:grant.Rmd-->
+
+# Awards and Honors
+
+```{r award}
+ezpickr::pick("data/award.csv") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:award.Rmd-->
+
+# Teaching Experience
+
+```{r teaching-experience}
+ezpickr::pick("data/teaching-experience.csv") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:teaching_exp.Rmd-->
+
+# Service
+
+```{r service}
+ezpickr::pick("data/service.csv") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:service.Rmd-->
+
+# Current Memberships
+
+  * American Society of Hematology
+  * American Society of Clinical Oncology
+  * American College of Physicians
+
+<!--chapter:end:membership.Rmd-->
+
+# Notes
+
+* This CV is reproducible:
+  source code available on this GitHub repository: <https://github.com/cbeauhilton/cv>, 
+  which borrowed heavily from JooYoung Seo's CV project: <https://github.com/jooyoungseo/jy_CV>.
+
+<!--chapter:end:backmatter.Rmd-->
+

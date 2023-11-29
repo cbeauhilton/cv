@@ -2,46 +2,42 @@
 
 \begin{cvskills}
   \cvskill
-    {Braille}
-    {UEB (Unified English Braille), Nemeth (Math), Korean, Japanese Brailles}
+    {Medicine}
+    {Internal Medicine, Pain Management, Shared Decision-Making}
 
   \cvskill
     {Data Science}
-    {R (highly advanced: published 3 packages in CRAN), Python (advanced: tensorflow/keras/scikit-learn), SQL}
+    {Python (PyTorch/scikit-learn/lightGBM/SHAP), SQL}
 
   \cvskill
     {Reproducible Report}
-    {Markdown/Rmarkdown, R shiny apps, Jupyter Notebook, LaTeX, Pandoc, lua}
+    {Markdown/Rmarkdown, Jupyter, LaTeX, Pandoc}
 
   \cvskill
     {DevOps}
-    {Git, Docker, AWS, Travis CI, Cygwin}
+    {Git, GitHub Actions, Travis CI}
 
   \cvskill
     {Front-End}
-    {HTML/CSS/JS/PHP/ARIA (advanced level to design according to WCAG 2.0/2.1), WordPress, Drupal, Hugo}
+    {HTML/CSS/JS, Hugo, Jekyll}
 
   \cvskill
     {Back-End}
-    {Unix/Linux Shell scripts, LAMP, Django, REST API}
-
-  \cvskill
-    {Compile Programming Languages}
-    {C/C++/C\#, Java, Quorum}
+    {Unix/Linux Shell scripts, httpd, FastAPI}
 
   \cvskill
     {Quantitative Research}
-    {t-test, within-/between-subjects/Repeated Measures ANOVAs/ANCOVAs/MANOVAs/MANCOVAs, Regressions, \newline HLM, Factor Analysis, Network Analysis, SEM, PCA, Unsupervised/Supervised Machine Learning}
+    {Unsupervised/Supervised Machine Learning, Interpretable Machine Learning, Standard Statistical Tests}
 
   \cvskill
     {Qualitative Research}
-    {Virtual Ethnography, Content Analysis, Grounded Theory, Phenomenology, Case Studies, Interaction Analysis}
+    {Ethnography, Content Analysis, Phenomenology}
 
   \cvskill
     {Mixed Research}
-    {Text Mining, Quantitative Ethnography, Explanatory/Exploratory Sequential Mixed Methods}
+    {Web Scraping (scrapy/requests), Text Mining}
 
   \cvskill
     {Languages}
-    {English/Korean (bilingual)}
+    {English}
 \end{cvskills}

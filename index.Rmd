@@ -1,37 +1,39 @@
 ---
 graphics: yes
-name: JooYoung
-surname: Seo
+name: Beau
+surname: Hilton
 headcolor: 414141
-#qualifications: 
-position: "Ph.D. Candidate (ABD); RStudio Trusted Data Science Instructor"
-address: "Learning, Design, and Technology, 301 Keller Building, University Park, PA 16802, USA"
-phone: "+1 814-777-5825"
-www: jooyoungseo.com
-email: "jooyoung@psu.edu"
-twitter: seo_jooyoung
-github: jooyoungseo
-linkedin: jooyoungseo
-aboutme: |
-  I am a learning scientist, data-science/software engineer, and internationally certified accessibility professional.
+#qualifications:
+position: "Physician data-scientist"
+address: "303 Light Hall, 2215 Garland Ave. Nashville, TN 37232"
+phone: "+1 623-332-7978"
+www: beauhilton.com
+email: "beau@beauhilton.com"
+github: cbeauhilton
+# aboutme: Physician, data scientist.
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
 csl: "csl/apa6-cv.csl"
 nocite: "@*"
+knit: "bookdown::render_book"
+output:
+  vitae::awesomecv:
+    fig_caption: yes
+    keep_tex: no
+    keep_md: no
+    pandoc_args:
+      - --lua-filter="lua/strong.lua"
+bibliography_journals: "bib/journal.bib"
+bibliography_abstracts: "bib/poster_abstract.bib"
+bibliography_oral_abstracts: "bib/oral_abstract.bib"
+# bibliography_contribute: "bib/contribute.bib"
+# bibliography_selected: "bib/selected.bib"
+# bibliography_wip_journal: "bib/wip_journal.bib"
+# bibliography_wip_proceeding: "bib/wip_proceeding.bib"
 header-includes:
   - \usepackage{fancyhdr}
   - \pagestyle{fancy}
   - \fancyhf{}
   - \fancyhead[R]{\thepage}
-knit: bookdown::render_book
-#bibliography_selected: "bib/selected.bib"
-bibliography_journals: "bib/journal.bib"
-bibliography_proceedings: "bib/proceedings.bib"
-bibliography_healthcare: "bib/healthcare.bib"
-bibliography_working_paper: "bib/working_paper.bib"
-bibliography_R_packages: "bib/R_packages.bib"
-bibliography_github_projects: "bib/github.bib"
-#given-name-pattern: JooYoung
-#family-name-pattern: Seo
 ---
 
 ```{r setup, include=FALSE, cache = FALSE}
