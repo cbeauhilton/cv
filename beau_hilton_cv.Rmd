@@ -21,7 +21,6 @@ output:
     keep_tex: no
     keep_md: no
     pandoc_args:
-      #- --lua-filter="lua/multiple-bibliographies.lua"
       - --lua-filter="lua/strong.lua"
 bibliography_journals: "bib/journal.bib"
 bibliography_abstracts: "bib/poster_abstract.bib"
@@ -80,8 +79,9 @@ ezpickr::pick("data/appointment.csv") %>%
 
 # Publications
 
-::: {#refs_journals}
-:::
+```{r}
+bibliography_entries("bib/journal.bib")
+```
 
 <!-- ## Working Papers under Revision or Review -->
 <!--  -->
@@ -105,8 +105,9 @@ ezpickr::pick("data/talk.csv") %>%
 
 # Abstracts
 
-::: {#refs_abstracts}
-:::
+```{r}
+bibliography_entries("bib/poster_abstract.bib")
+```
 
 <!--chapter:end:abstract.Rmd-->
 

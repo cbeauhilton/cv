@@ -1,7 +1,8 @@
 # Publications
 
-::: {#refs_journals}
-:::
+```{r}
+bibliography_entries("bib/journal.bib")
+```
 
 <!-- ## Working Papers under Revision or Review -->
 <!--  -->
