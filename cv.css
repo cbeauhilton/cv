@@ -1,0 +1,124 @@
+/* Professional CV Styling - Basic Converter Compatible  - https://md-to-pdf.fly.dev/ */
+
+/* Global styles and typography */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0.5em 0.8em;
+  color: #333;
+  font-size: 10pt;
+  max-width: none;
+}
+
+/* Headings */
+h1 {
+  font-size: 16pt;
+  color: #003366;
+  text-align: center;
+  margin: 0.5em 0;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid #003366;
+}
+
+h2 {
+  font-size: 12pt;
+  color: #003366;
+  text-align: center;
+  margin: 1em 0 0.4em 0;
+  padding-bottom: 0.1em;
+  border-bottom: 1px solid #eaeaea;
+}
+
+h3 {
+  font-size: 11pt;
+  color: #404040;
+  margin: 0.8em 0 0.3em 0;
+}
+
+h4 {
+  text-align: center;
+}
+
+/* Text content */
+p {
+  margin: 0.3em 0 0.6em 0;
+}
+
+a {
+  color: #0072b1;
+  text-decoration: none;
+}
+
+/* Lists */
+ul, ol {
+  margin: 0.4em 0 0.8em 0;
+  padding-left: 1.2em;
+}
+
+li {
+  margin-bottom: 0.2em;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.8em 0;
+  font-size: 9pt;
+}
+
+th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  text-align: left;
+}
+
+th, td {
+  padding: 0.4em 0.6em;
+  border: 1px solid #e0e0e0;
+  vertical-align: top;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Simple horizontal rule for separation */
+hr {
+  border: 0;
+  border-top: 1px solid #eaeaea;
+  margin: 0.8em 0;
+}
+
+/* Basic text styles that should work with any converter */
+strong, b {
+  font-weight: bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
+small {
+  font-size: 85%;
+}
+
+/* Adjust some spacing for address and contact info typically at the top */
+h1 + p {
+  text-align: center;
+  margin-top: 0;
+}
+
+/* Print settings */
+@media print {
+  body {
+    font-size: 10pt;
+    padding: 0;
+    margin: 0;
+  }
+  
+  @page {
+    margin: 0.5cm;
+  }
+}

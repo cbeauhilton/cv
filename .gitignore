@@ -11,3 +11,7 @@ fonts/*
 resources/
 short_cv/*
 _output/*
+.Rhistory
+.devenv/
+.direnv/
+jy_CV/
